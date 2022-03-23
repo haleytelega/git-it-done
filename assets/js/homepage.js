@@ -4,6 +4,7 @@ var getUserRepos = function (user) {
 
     //make a requst to the url
     fetch(apiUrl).then(function(response) {
+        console.log(response);
         response.json().then(function(data) {
             console.log(data);
         });
@@ -11,4 +12,4 @@ var getUserRepos = function (user) {
 
     console.log("outside") //run bc not dependant on anything
 }
-getUserRepos();
+getUserRepos("haleytelega");
